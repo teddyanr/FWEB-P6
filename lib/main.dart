@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // Import the Flutter Material package.
 
-import 'loginScreen.dart';
+import 'loginScreen.dart'; // Import the loginScreen package.
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Login',
+      title: 'Flutter Login', // Add Tittle to the App
       debugShowCheckedModeBanner: false,
       home: LoginScreen(),
     );

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter/material.dart'; // Import the Flutter Material package.
+import 'package:flutter/services.dart'; // Import the Flutter Services package.
 
 class LoginScreen extends StatefulWidget {
 
@@ -13,6 +13,7 @@ class _LoginScreenState extends State<LoginScreen> {
   bool isRememberMe = false;
 
   Widget buildEmail() {
+  // Create Email Login Form
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
@@ -48,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
           decoration: InputDecoration(
             border: InputBorder.none,
             contentPadding: EdgeInsets.only(top: 14.0),
-            prefixIcon: Icon(
+            prefixIcon: Icon( // Add Icon to Email TextField
               Icons.email,
               color: Color(0xFF73AEF5),
             ),
@@ -65,6 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
 }
 
   Widget buildPassword() {
+    // Create Password Login Form
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -100,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
             decoration: InputDecoration(
               border: InputBorder.none,
               contentPadding: EdgeInsets.only(top: 14.0),
-              prefixIcon: Icon(
+              prefixIcon: Icon( // Add Icon to Password TextField
                 Icons.lock,
                 color: Color(0xFF73AEF5),
               ),
@@ -117,6 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget buidLoginBtn() {
+    // Create Login Button
     return Container(
       padding: EdgeInsets.symmetric(vertical: 25.0),
       width: double.infinity,
@@ -143,6 +146,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget buidSignUpBtn() {
+    // Create Sign Up Button
     return GestureDetector(
       onTap: () => print('Sign Up Button Pressed'),
       child: RichText(
@@ -171,6 +175,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget buildForgotPassBtn() {
+    // Create Forgot Password If User Forgot The Password
     return Container(
       alignment: Alignment.centerRight,
       child: FlatButton(
@@ -189,6 +194,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget buildRememberMe() {
+    // Add Remember Me Checkbox
     return Container(
       height: 20.0,
       child: Row(
@@ -235,7 +241,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
-                    colors: [
+                    colors: [ // Add colors to Gradient Layout
                       Color(0xFF73AEF5),
                       Color(0xFF61A4F1),
                       Color(0xFF478DE0),
@@ -244,7 +250,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 child: SingleChildScrollView(
-                  physics: AlwaysScrollableScrollPhysics(),
+                  physics: AlwaysScrollableScrollPhysics(), // Layout Can Be Scrollable
                   padding: EdgeInsets.symmetric(
                     horizontal: 25.0,
                     vertical: 120.0,
@@ -252,22 +258,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text(
-                      'Sign In',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30.0,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    Image.asset( // Add Images Logo To Login Page
+                      'assets/images/images1.png', height: 100.0, width: 150.0
                     ),
-                    SizedBox(height: 50),
-                    buildEmail(),
+                    // Call Function
+                    buildEmail(), // Add Email TextField
                     SizedBox(height: 20),
-                    buildPassword(),
-                    buildForgotPassBtn(),
-                    buildRememberMe(),
-                    buidLoginBtn(),
-                    buidSignUpBtn(),
+                    buildPassword(), // Add Password TextField
+                    buildForgotPassBtn(), // Add Forgot Password Button
+                    buildRememberMe(), // Add Remember Me Checkbox
+                    buidLoginBtn(), // Add Login Button
+                    buidSignUpBtn(), // Add Sign Up Button
                   ],
                 ),
                 ),
