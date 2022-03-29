@@ -1,7 +1,0 @@
-D:/PROGRAMS/FlutterProjects/login_page/build/windows/runner/Debug/data/icudtl.dat
-D:/PROGRAMS/FlutterProjects/login_page/build/windows/runner/Debug/flutter_windows.dll
-D:/PROGRAMS/FlutterProjects/login_page/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
-D:/PROGRAMS/FlutterProjects/login_page/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
-D:/PROGRAMS/FlutterProjects/login_page/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
-D:/PROGRAMS/FlutterProjects/login_page/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
-D:/PROGRAMS/FlutterProjects/login_page/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
