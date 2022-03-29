@@ -1,0 +1,10 @@
+^D:\PROGRAMS\FLUTTERPROJECTS\LOGIN_PAGE\BUILD\WINDOWS\CMAKEFILES\804B8F6F3E24EDB073384B377F9889EF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/PROGRAMS/FlutterProjects/login_page/windows -BD:/PROGRAMS/FlutterProjects/login_page/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/PROGRAMS/FlutterProjects/login_page/build/windows/login_page.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
